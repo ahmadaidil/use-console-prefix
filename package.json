@@ -9,5 +9,8 @@
   "license": "MIT",
   "scripts": {
     "prepare": "tsc -p ."
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ahmadaidil"
   }
 }
