@@ -1,0 +1,16 @@
+{
+  "name": "use-console-prefix",
+  "version": "1.0.0",
+  "description": "add a custom prefix to all console message",
+  "main": "dist/console-prefix.js",
+  "types": "dist/console-prefix.d.ts",
+  "repository": "https://github.com/ahmadaidil/use-console-prefix.git",
+  "author": "ahmadaidil <ahmdaidil@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "tsc -p ."
+  },
+  "publishConfig": {
+    "registry": "http://192.168.1.70:7071/repository/npm-local"
+  }
+}
