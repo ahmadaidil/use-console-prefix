@@ -18,7 +18,7 @@ Add a custom prefix to every single console message
   console.error('error message') // [ERROR][APP-1] error message
   console.warn('warning message') // [WARN][APP-1] warning message
   console.info('info message') // [INFO][APP-1] info message
-  console.debug('debug message', 'best') // [DEBUG][APP-1] debug message
+  console.debug('debug message', 'best') // [DEBUG][APP-1] debug message best
   ```
 ---
 &copy;2019 Ahmad Aidil
