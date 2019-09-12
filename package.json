@@ -1,6 +1,6 @@
 {
   "name": "use-console-prefix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "add a custom prefix to all console message",
   "main": "dist/console-prefix.js",
   "types": "dist/console-prefix.d.ts",
