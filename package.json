@@ -9,8 +9,5 @@
   "license": "MIT",
   "scripts": {
     "prepare": "tsc -p ."
-  },
-  "publishConfig": {
-    "registry": "http://192.168.1.70:7071/repository/npm-local"
   }
 }
