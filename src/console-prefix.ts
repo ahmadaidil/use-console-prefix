@@ -10,9 +10,28 @@ export = <T>(prefix: T): void => {
     debug: console.debug
   }
 
-  function setPrefix(type: string) {
+  function setColor(type: string = '') {
+    switch(type) {
+      case 'log':
+        return '\x1b[32m'
+      case 'error':
+        return '\x1b[31m'
+      case 'warn':
+        return '\x1b[33m'
+      case 'info':
+        return '\x1b[36m'
+      case 'debug':
+        return '\x1b[35m'
+      case 'prefix':
+        return '\x1b[1m'
+      default:
+        return '\x1b[0m'
+    }
+  }
+
+  function setPrefix(type: string): string {
     const prefixMsg = typeof prefix === 'function' ? prefix() : prefix
-    return `[${type.toUpperCase()}][${prefixMsg}]`
+    return `[${setColor(type) + type.toUpperCase() + setColor()}][${setColor('prefix') + setColor(type) + prefixMsg + setColor()}] =>`
   }
 
   Object.keys(consoleTypes).forEach(key => {
